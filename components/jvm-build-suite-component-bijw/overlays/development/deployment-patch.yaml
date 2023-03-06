@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-bijw
+  namespace: jvm-build-edvd-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:94a250b26c39fe535db58ec726677e211d9f6342e5c0e31d1ae272fe8132b631
+        name: container-image
+        resources: {}
+status: {}
